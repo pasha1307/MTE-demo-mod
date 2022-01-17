@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         textDiv.innerHTML = SampleTxt;
     });
     userBtn.addEventListener('click', (e) => {
+        // !toLowerCase() is not applied in order to keep importance of the case validity
         userInput.value = userInput.value.trim();
         textDiv.innerHTML = textDiv.innerHTML.replace(userInput.value.trim(), (matched) => {
             if (matched) {
-                // userInput.value = '';
                 return `<span style="color: rebeccapurple;" class="span-replace">
-                            <b class="span-replace__mask">XXX</b>
+                            <b class="span-replace__mask">XXXX</b>
                             <b class="span-replace__value">${userInput.value}
                             </b>
                        </span>`
