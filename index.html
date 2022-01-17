@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,36 +13,44 @@
 <header>
     <h1>Hide Words and Phrases</h1>
 </header>
-<main class="app-main">
-    <section class="app-section__input-buttons">
-        <div class="app-section__btn-group-left">
+<main class="app-main-wrap">
+    <section>
+        <fieldset>
+            <legend>1. Set Text File</legend>
             <div>
                 <input id="uploadFile" name="uploadFile" type="file" class="app-input__upload" accept=".txt"/>
                 <button id="insertBtn">Insert Sample</button>
             </div>
-
+        </fieldset>
+        <fieldset>
+            <legend>2. Mask Key Terms</legend>
+            <div class="app-section__btn-group-right">
+                <input id="userInput" name="userInput" type="text" class="app-input__upload"
+                       placeholder="mask the term.."/>
+                <button id="userBtn"><i class="ri-arrow-down-line"></i></button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>3. Search for masked terms</legend>
             <div class="app-section__btn-group-right">
                 <input id="searchInput" name="searchInput" type="search" class="app-input__upload"
                        placeholder="find the masked term.."/>
                 <button id="searchBtn"><i class="ri-search-2-line"></i></button>
             </div>
-
-        </div>
+        </fieldset>
     </section>
-    <section class="app-section__output-text">
-        <div contenteditable="true" id="outputDiv">upload or insert the text</div>
-    </section>
-    <section class="app-section__output-buttons">
-        <div class="app-section__btn-group-right">
-            <button id="userBtn"><i class="ri-arrow-left-line"></i></button>
-            <input id="userInput" name="userInput" type="text" class="app-input__upload" placeholder="mask the term.."/>
-        </div>
-
-        <!--        <button id="exportBtn" class="app-section__btn-export">Save To File</button>-->
-        <!--            <textarea id="outputTxtArea" rows="14"></textarea>-->
-
+    <section class="app-section-output">
+        <fieldset>
+            <legend>Input/Output</legend>
+            <div contenteditable="true" id="outputDiv">
+                <p> upload or insert the text</p>
+            </div>
+        </fieldset>
 
     </section>
+    <!--        <button id="exportBtn" class="app-section__btn-export">Save To File</button>-->
+    <!--            <textarea id="outputTxtArea" rows="14"></textarea>-->
+
 </main>
 <footer>
     <small>MTExercise</small>
