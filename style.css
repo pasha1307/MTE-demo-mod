@@ -1,57 +1,78 @@
 body {
     max-width: 70vw;
 }
+
 footer {
     text-align: center;
 }
+
 .app-main {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    /*align-items: center;*/
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    max-width: 2200px;
 }
+
 .app-section__output-text {
-    /*max-width: 400px;*/
-    /*min-height: 400px;*/
+    max-width: 100%;
+    min-width: 540px;
 }
 
 #outputDiv {
-    width: 400px;
-    background-color: rgba(0,0,0,.1);
+    width: 100%;
+    background-color: rgba(0, 0, 0, .1);
     overflow-y: auto;
     min-height: 400px;
+    max-width: 450px;
+    margin: auto;
 }
 
 .app-section__input-buttons {
     max-width: 300px;
-    /*background-color: pink;*/
 }
+
 .app-section__output-buttons {
-    width: 330px;
-    /*background-color: yellow;*/
+    width: 300px;
 }
+
 .app-section__btn-group {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 1rem;
 }
+
+.app-section__btn-group-left {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    min-height: 400px;
+}
+
 .app-section__btn-group-right {
     display: flex;
     /*justify-content: space-between;*/
     margin-bottom: 1rem;
-    /*background-color: pink;*/
-}
-.app-section__btn-group-right input {
     width: 100%;
 }
+
+.app-section__btn-group-right input {
+    width: 100%;
+    margin-right: 0;
+}
+
 .app-section__btn-export {
     margin-bottom: 1rem;
 }
+
 .app-input__upload {
-    /*max-width: 93%;*/
+    max-width: 280px;
 }
+
 .span-replace__value {
     opacity: 0;
     font-size: 0;
