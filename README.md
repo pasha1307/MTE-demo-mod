@@ -1,16 +1,14 @@
-# MTE-solution-demo
+# MTE-solution-demo-modified (user sets the masked terms logic is added; Part II is added).
 **1. UI:**
-- text area with the input text; text area with the output text; editable DIVs with the HTML output text and mapped replacements
+- User Text Input to set terms and phrases in the editable div component;
+- editable div with the text either inserted as a sample, or uploaded from the machine; it also searhable for the masked terms;
+- search input box to identify masked terms;
 - buttons: upload file, export file, insert text, cancel
 - search input box
 
 **2. Functionality:**
-- Main approach is to replace the Key Terms (words of phrases) in the Input (string) with the XXXX or any other replacement characters or text.
-- Steps:
-1. Set a RegEx that sets the replacement strategy (words or phrases replaced globally);
-2. Set Key Terms set as a map with props to replace and replacement values.
-3. Scenario Upload: FileReader to process and transform the text.
-4. Scenario Insert or Type.
-5. Save As…
+Step 1. User retreives the text file either via upload or via insert sample.
+Step 2. User types words or phrases that are masked in the Text Box as XXXX.
+Step 3. User can search the masked text by typing terms or phrases. If the search text matches the hidden, then it is revealed in the text.
 
 **3. Run locally:** ```npm run dev``` # MTE-demo-mod
