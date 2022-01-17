@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     userBtn.addEventListener('click', (e) => {
         // !toLowerCase() is not applied in order to keep importance of the case validity
         userInput.value = userInput.value.trim();
-        textDiv.innerHTML = textDiv.innerHTML.replace(userInput.value.trim(), (matched) => {
+        textDiv.innerHTML = textDiv.innerHTML.replaceAll(userInput.value.trim(), (matched) => {
             if (matched) {
                 return `<span style="color: rebeccapurple;" class="span-replace">
                             <b class="span-replace__mask">XXXX</b>
@@ -35,12 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
             let searchStr = searchInput.value.toString();
             let textStr = hiddenEls[i].children[1].innerText.trim().toString();
             if (searchStr === textStr) {
+                // console.log('TRUE', true);
                 hiddenEls[i].children[1].classList.remove('span-replace__value');
                 hiddenEls[i].classList.add('span-reveal');
-                searchInput.value = '';
             } else {
                 alert('The term is not among masked');
-                searchInput.value = '';
             }
         }
 
