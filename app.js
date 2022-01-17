@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     userBtn.addEventListener('click', (e) => {
         // !toLowerCase() is not applied in order to keep importance of the case validity
-        textDiv.innerHTML = SampleTxt;
         userInput.value = userInput.value.trim();
         textDiv.innerHTML = textDiv.innerHTML.replaceAll(userInput.value.trim(), (matched) => {
             if (matched) {
