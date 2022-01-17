@@ -38,8 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 // console.log('TRUE', true);
                 hiddenEls[i].children[1].classList.remove('span-replace__value');
                 hiddenEls[i].classList.add('span-reveal');
-            } else {
-                alert('The term is not among masked');
             }
         }
 
