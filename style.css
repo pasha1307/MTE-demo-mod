@@ -1,0 +1,63 @@
+body {
+    max-width: 70vw;
+}
+footer {
+    text-align: center;
+}
+.app-main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /*align-items: center;*/
+    /*flex-wrap: wrap;*/
+}
+.app-section__output-text {
+    /*max-width: 400px;*/
+    /*min-height: 400px;*/
+}
+
+#outputDiv {
+    width: 400px;
+    background-color: rgba(0,0,0,.1);
+    overflow-y: auto;
+    min-height: 400px;
+}
+
+.app-section__input-buttons {
+    max-width: 300px;
+    /*background-color: pink;*/
+}
+.app-section__output-buttons {
+    width: 330px;
+    /*background-color: yellow;*/
+}
+.app-section__btn-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.app-section__btn-group-right {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-bottom: 1rem;
+    /*background-color: pink;*/
+}
+.app-section__btn-group-right input {
+    width: 100%;
+}
+.app-section__btn-export {
+    margin-bottom: 1rem;
+}
+.app-input__upload {
+    /*max-width: 93%;*/
+}
+.span-replace__value {
+    opacity: 0;
+    font-size: 0;
+}
+
+.span-reveal.span-replace .span-replace__mask {
+    opacity: 0;
+    font-size: 0;
+}

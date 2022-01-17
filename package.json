@@ -1,0 +1,13 @@
+{
+  "name": "mtedemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
