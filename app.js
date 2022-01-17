@@ -31,14 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
         userInput.value = '';
     });
     searchBtn.addEventListener('click', (e) => {
-        console.log('IN VAL', searchInput.value);
-        console.log('MASKED SPANS', hiddenEls);
         for (let i = 0; i < hiddenEls.length; i++) {
             let searchStr = searchInput.value.toString();
             let textStr = hiddenEls[i].children[1].innerText.trim().toString();
             if (searchStr === textStr) {
                 hiddenEls[i].children[1].classList.remove('span-replace__value');
                 hiddenEls[i].classList.add('span-reveal');
+                searchInput.value = '';
+            } else {
+                alert('The term is not among masked');
+                searchInput.value = '';
             }
         }
 
