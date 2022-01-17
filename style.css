@@ -40,12 +40,12 @@ footer {
 }
 
 .app-section-output #outputDiv {
-    width: 100%;
     min-width: 800px;
     margin: auto;
     background-color: rgba(0, 0, 0, .1);
     overflow-y: auto;
     min-height: 400px;
+    padding: 1rem;
 }
 
 .app-section-output #outputDiv p {
